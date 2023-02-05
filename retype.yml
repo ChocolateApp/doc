@@ -1,6 +1,6 @@
 input: .
 output: .retype
-url: chocolateapp.github.io/doc
+url: chocolateapp.github.io/doc/
 branding:
   title: Chocolate
   label: Docs
