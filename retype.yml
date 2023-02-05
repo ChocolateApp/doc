@@ -1,4 +1,4 @@
-input: docs
+input: .
 output: .retype
 url: # Add your website address here
 branding:
