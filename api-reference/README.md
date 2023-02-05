@@ -11,10 +11,10 @@ All routes are written with http://ip:port
 
 Everything related to accounts and users:
 
-[! Users](users.md)
+[Users](users.md)
 
 ## Librarie(s)
 
 Everything related to libraries
 
-[! Libraries](libraries.md)
+[Libraries](libraries.md)
