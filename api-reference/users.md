@@ -9,7 +9,7 @@ All the routes about the users
 
 ## Routes
 
-==- [!badge text="POST"] Login
+==- [!badge text="POST" variant="success"] Login
 
 ##### http://ip:port/login
 
@@ -21,6 +21,7 @@ All parameters need to be in a form-data.
 
 
 #### Body
+<br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -28,7 +29,7 @@ All parameters need to be in a form-data.
 | password | string | The account password | true |
 
 
-### Parameters
+### Responses
 <br>
 
 
@@ -40,12 +41,12 @@ All parameters need to be in a form-data.
 
 
 
-==- [!badge text="POST"] Logout
+==- [!badge text="POST" variant="success"] Logout
 
 ##### http://ip:port/logout
 
 
-### Parameters
+### Responses
 <br>
 
 
@@ -56,7 +57,7 @@ All parameters need to be in a form-data.
 | 400: Bad Request | You are not logged in |
 
 
-==- [!badge text="POST"] Create Account
+==- [!badge text="POST" variant="success"] Create Account
 
 ##### http://ip:port/createAccount
 
@@ -68,6 +69,7 @@ All parameters need to be in a form-data.
 
 
 #### Body
+<br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -77,7 +79,7 @@ All parameters need to be in a form-data.
 | profilePicture | File | The profile picture image | false |
 
 
-### Parameters
+### Responses
 <br>
 
 
@@ -89,9 +91,9 @@ All parameters need to be in a form-data.
 
 
 
-==- [!badge text="POST"] Edit Account
+==- [!badge text="POST" variant="success"] Edit Account
 
-##### http://ip:port/editAccount
+##### http://ip:port/profil
 
 All parameters need to be in a form-data.
 
@@ -101,16 +103,16 @@ All parameters need to be in a form-data.
 
 
 #### Body
+<br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | name | string | The account username | false |
 | password | string | The account password | false |
-| type | string | The account type (Admin, Adult, Teen, Kid) | false |
 | profilePicture | File | The profile picture image | false |
 
 
-### Parameters
+### Responses
 <br>
 
 
@@ -131,7 +133,7 @@ You need to be logged in.
 The route return in a JSON the account data, the name, the sha256 password, the profile picture, and the account type
 
 
-### Parameters
+### Responses
 <br>
 
 
@@ -140,6 +142,5 @@ The route return in a JSON the account data, the name, the sha256 password, the 
 | ------ | ----------- |
 | 200: OK | Account data |
 | 400: Bad Request | You are not logged in |
-
 
 ===

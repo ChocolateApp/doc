@@ -4,11 +4,11 @@ order: 99999
 ---
 
 # Libraries
-All the routes about the libraries
+All the routes related to libraries
 
 ## Routes
 
-==- [!badge text="GET"] Create a new librarie
+==- [!badge text="POST" variant="success"] Create a new librarie
 
 ##### http://ip:port/createLib
 
@@ -20,6 +20,7 @@ All parameters need to be in a json
 
 
 #### Body
+<br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -28,7 +29,7 @@ All parameters need to be in a json
 | libType | string | The librarie type (movies, series, games, tv, other, books) | true |
 | libUsers | string | A string with all users allowed to acced to the lib. Ex: "Bob, Paulo" | false |
 
-### Parameters
+### Responses
 <br>
 
 
@@ -37,7 +38,7 @@ All parameters need to be in a json
 | 200: OK | Librarie created |
 | 400: Bad Request | Librarie already exist |
 
-==- [!badge text="GET"] Edit a librarie
+==- [!badge text="POST" variant="success"] Edit a librarie
 
 ##### http://ip:port/editLib/:libName
 
@@ -49,11 +50,14 @@ Parameters in the path and in a json
 
 
 #### Path
+<br>
+
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | libName | string | The librarie name (unique) | true |
 
 #### Body
+<br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -61,7 +65,7 @@ Parameters in the path and in a json
 | libType | string | The librarie type (movies, series, games, tv, other, books) | false |
 | libUsers | string | A string with all users allowed to acced to the lib. Ex: "Bob, Paulo" | false |
 
-### Parameters
+### Responses
 <br>
 
 
@@ -70,7 +74,7 @@ Parameters in the path and in a json
 | 200: OK | Librarie edited |
 | 400: Bad Request | Librarie doesn't exist |
 
-==- [!badge text="GET"] Delete a librarie
+==- [!badge text="POST" variant="success"] Delete a librarie
 
 ##### http://ip:port/deleteLib/:libName
 
@@ -82,11 +86,13 @@ Parameters in the path
 
 
 ### Path
+<br>
+
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | libName | string | The librarie name (unique) | true |
 
-### Parameters
+### Responses
 <br>
 
 
@@ -101,11 +107,8 @@ Parameters in the path
 
 No parameters
 
-
-
-### Parameters
+### Responses
 <br>
-
 
 | Status | Description |
 | ------ | ----------- |
@@ -121,15 +124,15 @@ Parameters in the path
 ### Parameters
 <br>
 
-
 ### Path
+<br>
+
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | userName | string | The user name | true |
 
-### Parameters
+### Responses
 <br>
-
 
 | Status | Description |
 | ------ | ----------- |
@@ -145,18 +148,53 @@ Parameters in the path
 ### Parameters
 <br>
 
-
 ### Path
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | libType | string | The librarie type (movies, series, games, tv, other, books) | true |
 
-### Parameters
+### Responses
 <br>
-
 
 | Status | Description |
 | ------ | ----------- |
 | 200: OK | All the libraries of the type |
+
+==- [!badge text="GET"] Rescan a librarie
+
+##### http://ip:port/rescan/:libName
+
+Parameters in the path
+
+### Parameters
+<br>
+
+### Path
+<br>
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| libName | string | The librarie name (unique) | true |
+
+### Responses
+<br>
+
+| Status | Description |
+| ------ | ----------- |
+| 200: OK | Librarie rescaned |
+| 400: Bad Request | Librarie doesn't exist |
+
+==- [!badge text="GET"] Rescan all the libraries
+
+##### http://ip:port/rescanAll
+
+No parameters
+
+### Responses
+<br>
+
+| Status | Description |
+| ------ | ----------- |
+| 200: OK | All the libraries rescaned |
 
 ===
