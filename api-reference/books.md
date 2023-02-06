@@ -3,29 +3,29 @@ label: Books
 order: 99994
 ---
 
-# Books
+## Books
 
 All routes related to books
 
-## Routes
+### Routes
 
 ==- [!badge text="GET"] Get all books
 
-##### http://ip:port/getAllBooks/:librarieName
+###### http://ip:port/getAllBooks/:librarieName
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | librarieName | string | The librarie name | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -35,21 +35,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get a book slug
 
-##### http://ip:port/bookUrl/:bookId
+###### http://ip:port/bookUrl/:bookId
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | bookId | int | The book id | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -59,14 +59,14 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get a book page
 
-##### http://ip:port/bookUrl/:bookId/:page
+###### http://ip:port/bookUrl/:bookId/:page
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
@@ -74,7 +74,7 @@ Parameters in the path
 | bookId | int | The book id | true |
 | page | int | The page number | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -84,21 +84,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get a book data
 
-##### http://ip:port/bookData/:bookId
+###### http://ip:port/bookData/:bookId
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | bookId | int | The book id | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |

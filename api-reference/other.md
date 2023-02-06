@@ -3,29 +3,29 @@ label: Other
 order: 99993
 ---
 
-# Other
+## Other
 
 All routes related to other videos
 
-## Routes
+### Routes
 
 ==- [!badge text="GET"] Get all other videos
 
-##### http://ip:port/getAllOther/:librarieName
+###### http://ip:port/getAllOther/:librarieName
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | librarieName | string | The librarie name | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -35,21 +35,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get other video stream
 
-##### http://ip:port/otherVideo/:otherHash
+###### http://ip:port/otherVideo/:otherHash
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | otherHash | string | The other video hash | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |

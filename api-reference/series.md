@@ -3,29 +3,29 @@ label: Series
 order: 99997
 ---
 
-# Series
+## Series
 
 All the routes related to series
 
-## Routes
+### Routes
 
 ==- [!badge text="GET"] Get all series
 
-##### http://ip:port/getAllSeries/:librarieName
+###### http://ip:port/getAllSeries/:librarieName
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | librarieName | string | The librarie name | true |
 
-### Responses
+#### Responses
 
 <br>
 
@@ -36,21 +36,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get a serie data
 
-##### http://ip:port/getSerieData/:serieId
+###### http://ip:port/getSerieData/:serieId
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | serieId | string | The serie id (from TMDB) | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -58,7 +58,7 @@ Parameters in the path
 | 200: OK | The serie data |
 | 404: Not Found | The serie was not found |
 
-### Data returned
+#### Data returned
 <br>
 
 | Name | Type | Description |
@@ -82,21 +82,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get a season data
 
-##### http://ip:port/getSeasonData/:seasonId
+###### http://ip:port/getSeasonData/:seasonId
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | seasonId | string | The season id (from TMDB) | true |
 
-### Responses
+#### Responses
 
 <br>
 
@@ -105,7 +105,7 @@ Parameters in the path
 | 200: OK | The season data |
 | 404: Not Found | The season was not found |
 
-### Data returned
+#### Data returned
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -123,14 +123,14 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get an episode data
 
-##### http://ip:port/getEpisodeData/:seasonId/:episodeId
+###### http://ip:port/getEpisodeData/:seasonId/:episodeId
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
@@ -138,7 +138,7 @@ Parameters in the path
 | seasonId | string | The season id (from TMDB) | true |
 | episodeId | string | The episode id (from TMDB) | true |
 
-### Responses
+#### Responses
 
 
 | Status | Description |
@@ -146,7 +146,7 @@ Parameters in the path
 | 200: OK | The episode data |
 | 404: Not Found | The episode was not found |
 
-### Data returned
+#### Data returned
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

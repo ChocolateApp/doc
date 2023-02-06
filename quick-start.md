@@ -4,9 +4,9 @@ order: 99999
 ---
 
 
-# Quick Start
+### Quick Start
 
-## Determine your Chocolate Server IP and Port
+#### Determine your Chocolate Server IP and Port
 
 The combination of the Chocolate Server IP and Port are essential
 
@@ -16,7 +16,7 @@ To get the combination, simply start the server, wait it to load, and look at th
 *  Running on: http://ip:port
 ```
 
-## Interact with Chocolate
+#### Interact with Chocolate
 
 There's no best way to interact with Chocolate, all programming language can do it!
 
@@ -143,31 +143,31 @@ public class Main {
 +++
 
 
-## Make your first request
+#### Make your first request
 
 To make your first request, send a request to /login, to authenticate
 
 ==- [!badge text="POST" variant="success"] http://ip:port/login
-# Login
+### Login
 Login to an existing account.
 
 All parameters need to be in a form-data.
 
-## Parameters
+#### Parameters
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | name | string | The account username | true |
 | password | string | The account password | true |
 
-## Responses
+#### Responses
 
 | Status | Description |
 | ------ | ----------- |
 | 200: OK | Logged in |
 | 400: Bad Request | Wrong username or password |
 
-## Example
+#### Example
 
 Take a look at how you might call this method using your favorite languages:
 

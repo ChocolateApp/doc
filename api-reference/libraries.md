@@ -3,23 +3,23 @@ label: Libraries
 order: 99999
 ---
 
-# Libraries
+## Libraries
 All the routes related to libraries
 
-## Routes
+### Routes
 
 ==- [!badge text="POST" variant="success"] Create a new librarie
 
-##### http://ip:port/createLib
+###### http://ip:port/createLib
 
 All parameters need to be in a json
 
 
-### Parameters
+#### Parameters
 <br>
 
 
-#### Body
+##### Body
 <br>
 
 | Name | Type | Description | Required |
@@ -29,7 +29,7 @@ All parameters need to be in a json
 | libType | string | The librarie type (movies, series, games, tv, other, books) | true |
 | libUsers | string | A string with all users allowed to acced to the lib. Ex: "Bob, Paulo" | false |
 
-### Responses
+#### Responses
 <br>
 
 
@@ -40,23 +40,23 @@ All parameters need to be in a json
 
 ==- [!badge text="POST" variant="success"] Edit a librarie
 
-##### http://ip:port/editLib/:libName
+###### http://ip:port/editLib/:libName
 
 Parameters in the path and in a json
 
 
-### Parameters
+#### Parameters
 <br>
 
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | libName | string | The librarie name (unique) | true |
 
-#### Body
+##### Body
 <br>
 
 | Name | Type | Description | Required |
@@ -65,7 +65,7 @@ Parameters in the path and in a json
 | libType | string | The librarie type (movies, series, games, tv, other, books) | false |
 | libUsers | string | A string with all users allowed to acced to the lib. Ex: "Bob, Paulo" | false |
 
-### Responses
+#### Responses
 <br>
 
 
@@ -76,23 +76,23 @@ Parameters in the path and in a json
 
 ==- [!badge text="POST" variant="success"] Delete a librarie
 
-##### http://ip:port/deleteLib/:libName
+###### http://ip:port/deleteLib/:libName
 
 Parameters in the path
 
 
-### Parameters
+#### Parameters
 <br>
 
 
-### Path
+#### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | libName | string | The librarie name (unique) | true |
 
-### Responses
+#### Responses
 <br>
 
 
@@ -103,11 +103,11 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get all the libraries
 
-##### http://ip:port/getAllLibraries
+###### http://ip:port/getAllLibraries
 
 No parameters
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -116,22 +116,22 @@ No parameters
 
 ==- [!badge text="GET"] Get all the libraries of a user
 
-##### http://ip:port/getAllLibraries/:userName
+###### http://ip:port/getAllLibraries/:userName
 
 Parameters in the path
 
 
-### Parameters
+#### Parameters
 <br>
 
-### Path
+#### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | userName | string | The user name | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -140,20 +140,20 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get all the libraries of a type
 
-##### http://ip:port/getAllLibraries/:libType
+###### http://ip:port/getAllLibraries/:libType
 
 Parameters in the path
 
 
-### Parameters
+#### Parameters
 <br>
 
-### Path
+#### Path
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | libType | string | The librarie type (movies, series, games, tv, other, books) | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -162,21 +162,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Rescan a librarie
 
-##### http://ip:port/rescan/:libName
+###### http://ip:port/rescan/:libName
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-### Path
+#### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | libName | string | The librarie name (unique) | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -186,11 +186,11 @@ Parameters in the path
 
 ==- [!badge text="GET"] Rescan all the libraries
 
-##### http://ip:port/rescanAll
+###### http://ip:port/rescanAll
 
 No parameters
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |

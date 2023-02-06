@@ -3,29 +3,29 @@ label: Games
 order: 99996
 ---
 
-# Games
+## Games
 
 All the routes related to games
 
-## Routes
+### Routes
 
 ==- [!badge text="GET"] Get all system
 
-##### http://ip:port/getAllConsoles/:librarieName
+###### http://ip:port/getAllConsoles/:librarieName
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | librarieName | string | The librarie name | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -35,21 +35,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get system data
 
-##### http://ip:port/getConsoleData/:consoleName
+###### http://ip:port/getConsoleData/:consoleName
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | consoleName | string | The console name | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -58,21 +58,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get all games
 
-##### http://ip:port/getGames/:librarieName
+###### http://ip:port/getGames/:librarieName
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | librarieName | string | The librarie name | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -82,14 +82,14 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get the game file
 
-##### http://ip:port/gameFile/:console/:gameSlug
+###### http://ip:port/gameFile/:console/:gameSlug
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
@@ -97,7 +97,7 @@ Parameters in the path
 | console | string | The console name | true |
 | gameSlug | string | The game slug | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -106,21 +106,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get the console bios
 
-##### http://ip:port/bios/:console
+###### http://ip:port/bios/:console
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | console | string | The console name | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -129,21 +129,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get the game data
 
-##### http://ip:port/getGameData/:gameId
+###### http://ip:port/getGameData/:gameId
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | gameId | string | The game id (from IGDB) | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |

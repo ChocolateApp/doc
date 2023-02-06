@@ -3,22 +3,22 @@ label: Settings
 order: 99991
 ---
 
-# Settings
+## Settings
 
 All routes related to settings
 
-## Routes
+### Routes
 
 ==- [!badge text="POST" variant="success"] Edit settings
 
-##### http://ip:port/saveSettings/
+###### http://ip:port/saveSettings/
 
 Parameters in form data
 
-### Parameters
+#### Parameters
 <br>
 
-#### Form data
+##### Form data
 <br>
 
 | Name | Type | Description | Required |
@@ -30,7 +30,7 @@ Parameters in form data
 | igdbID | string | The igdbKey | false |
 | allowDownloadsCheckbox | string | The allowDownloadsCheckbox (on/off) | false |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |

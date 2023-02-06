@@ -3,24 +3,24 @@ label: Users
 order: 100000
 ---
 
-# Users
+## Users
 
 All the routes about the users
 
-## Routes
+### Routes
 
 ==- [!badge text="POST" variant="success"] Login
 
-##### http://ip:port/login
+###### http://ip:port/login
 
 All parameters need to be in a form-data.
 
 
-### Parameters
+#### Parameters
 <br>
 
 
-#### Body
+##### Body
 <br>
 
 | Name | Type | Description | Required |
@@ -29,7 +29,7 @@ All parameters need to be in a form-data.
 | password | string | The account password | true |
 
 
-### Responses
+#### Responses
 <br>
 
 
@@ -43,10 +43,10 @@ All parameters need to be in a form-data.
 
 ==- [!badge text="POST" variant="success"] Logout
 
-##### http://ip:port/logout
+###### http://ip:port/logout
 
 
-### Responses
+#### Responses
 <br>
 
 
@@ -59,16 +59,16 @@ All parameters need to be in a form-data.
 
 ==- [!badge text="POST" variant="success"] Create Account
 
-##### http://ip:port/createAccount
+###### http://ip:port/createAccount
 
 All parameters need to be in a form-data.
 
 
-### Parameters
+#### Parameters
 <br>
 
 
-#### Body
+##### Body
 <br>
 
 | Name | Type | Description | Required |
@@ -79,7 +79,7 @@ All parameters need to be in a form-data.
 | profilePicture | File | The profile picture image | false |
 
 
-### Responses
+#### Responses
 <br>
 
 
@@ -93,16 +93,16 @@ All parameters need to be in a form-data.
 
 ==- [!badge text="POST" variant="success"] Edit Account
 
-##### http://ip:port/profil
+###### http://ip:port/profil
 
 All parameters need to be in a form-data.
 
 
-### Parameters
+#### Parameters
 <br>
 
 
-#### Body
+##### Body
 <br>
 
 | Name | Type | Description | Required |
@@ -112,7 +112,7 @@ All parameters need to be in a form-data.
 | profilePicture | File | The profile picture image | false |
 
 
-### Responses
+#### Responses
 <br>
 
 
@@ -126,14 +126,14 @@ All parameters need to be in a form-data.
 
 ==- [!badge text="GET"] Who am I ?
 
-##### http://ip:port/whoami
+###### http://ip:port/whoami
 
 You need to be logged in.
 
 The route return in a JSON the account data, the name, the sha256 password, the profile picture, and the account type
 
 
-### Responses
+#### Responses
 <br>
 
 

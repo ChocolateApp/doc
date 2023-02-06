@@ -3,29 +3,29 @@ label: Movies
 order: 99998
 ---
 
-# Movies
+## Movies
 
 All the routes related to movies
 
-## Routes
+### Routes
 
 ==- [!badge text="GET"] Get all movies
 
-##### http://ip:port/getAllMovies/:librarieName
+###### http://ip:port/getAllMovies/:librarieName
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | librarieName | string | The librarie name | true |
 
-### Responses
+#### Responses
 
 <br>
 
@@ -36,21 +36,21 @@ Parameters in the path
 
 ==- [!badge text="GET"] Get a movie data
 
-##### http://ip:port/getMovieData/:movieId
+###### http://ip:port/getMovieData/:movieId
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | movieId | string | The movie id | true |
 
-### Responses
+#### Responses
 
 <br>
 
@@ -59,7 +59,7 @@ Parameters in the path
 | 200: OK | The movie data |
 | 404: Not Found | The movie was not found |
 
-### Data returned
+#### Data returned
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -83,14 +83,14 @@ Parameters in the path
 
 ==- [!badge text="POST" variant="success"] Set movie view timecode
 
-##### http://ip:port/setVuesTimeCode
+###### http://ip:port/setVuesTimeCode
 
 Parameters in the body
 
-### Parameters
+#### Parameters
 <br>
 
-#### Body
+##### Body
 <br>
 
 | Name | Type | Description | Required |
@@ -98,7 +98,7 @@ Parameters in the body
 | movieID | int | The movie id | true |
 | timeCode | int | The movie timecode | true |
 
-### Responses
+#### Responses
 
 <br>
 

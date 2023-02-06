@@ -3,29 +3,29 @@ label: TV
 order: 99995
 ---
 
-# TV
+## TV
 
 All the routes related to TV Channels
 
-## Routes
+### Routes
 
 ==- [!badge text="GET"] Get all TV Channels
 
-##### http://ip:port/getChannels/:librarieName
+###### http://ip:port/getChannels/:librarieName
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | librarieName | string | The librarie name | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -33,7 +33,7 @@ Parameters in the path
 | 200: OK | All the TV Channels |
 | 404: Not Found | The librarie was not found |
 
-### Data returned
+#### Data returned
 
 ```json
 [

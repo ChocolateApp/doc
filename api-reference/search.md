@@ -3,22 +3,22 @@ label: Search
 order: 99992
 ---
 
-# Search
+## Search
 
 All routes related to search
 
-## Routes
+### Routes
 
 ==- [!badge text="GET"] Search a movie
 
-##### http://ip:port/searchInMovies/:librarieName/:search
+###### http://ip:port/searchInMovies/:librarieName/:search
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
@@ -26,7 +26,7 @@ Parameters in the path
 | librarieName | string | The librarie name | true |
 | search | string | The search | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -35,14 +35,14 @@ Parameters in the path
 
 ==- [!badge text="GET"] Search a serie
 
-##### http://ip:port/searchInSeries/:librarieName/:search
+###### http://ip:port/searchInSeries/:librarieName/:search
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
@@ -50,7 +50,7 @@ Parameters in the path
 | librarieName | string | The librarie name | true |
 | search | string | The search | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
@@ -59,14 +59,14 @@ Parameters in the path
 
 ==- [!badge text="GET"] Search a book
 
-##### http://ip:port/searchInBooks/:librarieName/:search
+###### http://ip:port/searchInBooks/:librarieName/:search
 
 Parameters in the path
 
-### Parameters
+#### Parameters
 <br>
 
-#### Path
+##### Path
 <br>
 
 | Name | Type | Description | Required |
@@ -74,7 +74,7 @@ Parameters in the path
 | librarieName | string | The librarie name | true |
 | search | string | The search | true |
 
-### Responses
+#### Responses
 <br>
 
 | Status | Description |
