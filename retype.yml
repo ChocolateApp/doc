@@ -1,8 +1,13 @@
 input: .
 output: .retype
 url: chocolateapp.github.io/doc/
+favicon: static/logo.ico
 branding:
   title: Chocolate
   label: Docs
+  logo: static/logo.webp
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
+edit:
+  repo: "https://github.com/ChocolateApp/doc/edit/"
+  label: Edit on GitHub
