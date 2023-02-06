@@ -37,7 +37,7 @@ All parameters need to be in a form-data.
 | Status | Description |
 | ------ | ----------- |
 | 200: OK | Logged in |
-| 400: Bad Request | Wrong username or password |
+| 401: Unauthorized | Wrong username or password |
 
 
 
