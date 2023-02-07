@@ -11,3 +11,5 @@ footer:
 edit:
   repo: "https://github.com/ChocolateApp/doc/edit/"
   label: Edit on GitHub
+cache:
+  strategy: query
